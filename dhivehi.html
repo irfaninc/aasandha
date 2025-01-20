@@ -39,8 +39,7 @@
                     English
                 </a>
 
-                <button type="button" class="navbar-toggler ms-3" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse3">
+                <button type="button" class="navbar-toggler ms-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse3">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -363,9 +362,10 @@ background: linear-gradient(90deg, rgba(144,40,41,1) 57%, rgba(225,49,53,1) 78%)
                 style="stroke-dasharray: 118.611; stroke-dashoffset: 0;"></circle>
         </svg><i class="ai-arrow-up"></i></a>
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/theme.min.js"></script>
@@ -407,6 +407,38 @@ background: linear-gradient(90deg, rgba(144,40,41,1) 57%, rgba(225,49,53,1) 78%)
 
     $(document).ready(function () {
         $('.count-up').countUp();
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var navbarToggler = document.querySelector(".navbar-toggler");
+        var navbarCollapse = document.querySelector("#navbarCollapse3");
+
+        // Close navbar when clicking on a link
+        document.querySelectorAll(".nav-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (navbarCollapse.classList.contains("show")) {
+                    navbarToggler.click(); // Simulate a click on the toggler
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var navbarToggler = document.querySelector(".navbar-toggler");
+        var navbarCollapse = document.querySelector("#navbarCollapse3");
+
+        // Close navbar when clicking on a link
+        document.querySelectorAll(".nav-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (navbarCollapse.classList.contains("show")) {
+                    navbarToggler.click(); // Simulate a click on the toggler
+                }
+            });
+        });
     });
 </script>
 </body>
