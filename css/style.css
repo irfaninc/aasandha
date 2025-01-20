@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+.phone{
+    transform: scaleX(-1);
+}
+
+.logo-heartbeat {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo-heartbeat:hover {
+    animation: heartbeat 1s ease-in-out infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    14% {
+      transform: scale(1.15);
+    }
+    28% {
+      transform: scale(1);
+    }
+    42% {
+      transform: scale(1.15);
+    }
+    70% {
+      transform: scale(1);
+    }
+  }
