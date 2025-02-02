@@ -305,3 +305,9 @@ h4{
 .contact-footer-image{
   background-color: #c8171d;
 }
+
+@media (min-width: 499px) {
+    .d-xs-none {
+        display: none !important;
+    }
+}
